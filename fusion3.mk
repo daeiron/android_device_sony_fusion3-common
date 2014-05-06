@@ -203,6 +203,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
 
+# Touchscreen
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.input.noresample=1
+
 # IR-blaster Support
 ifeq ($(BOARD_HAVE_IR_BLASTER),true)
 PRODUCT_PACKAGES += \
