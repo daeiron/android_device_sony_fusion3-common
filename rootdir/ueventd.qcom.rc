@@ -97,6 +97,7 @@
 /dev/msm_preproc_ctl      0660   system     audio
 /dev/msm_rtac             0660   system     audio
 /dev/msm_voicememo        0660   system     audio
+/dev/iio:device*          0660   system     input
 
 # MHL
 /sys/devices/i2c-0/0-0039/mhl/sii8334  adopter_id 0440  system  system
