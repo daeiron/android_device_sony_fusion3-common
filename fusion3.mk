@@ -46,9 +46,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
 
-# GPS
+# GPS / Location
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf
+    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf \
+    $(COMMON_PATH)/rootdir/system/etc/sap.conf:system/etc/sap.conf
 
 # WPA supplicant config
 PRODUCT_COPY_FILES += \
@@ -69,6 +70,10 @@ PRODUCT_PACKAGES += \
     gralloc.msm8960 \
     copybit.msm8960 \
     memtrack.msm8960
+
+# Keystore
+PRODUCT_PACKAGES += \
+    keystore.qcom
 
 # NFC Support
 PRODUCT_PACKAGES += \
