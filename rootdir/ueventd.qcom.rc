@@ -187,17 +187,6 @@
 # Camera
 /dev/msm_vpe_standalone                         0660  system   camera
 
-# Sensors
-/dev/mpu                                        0600  system   system
-/dev/mpuirq                                     0600  system   system
-/dev/timerirq                                   0600  system   system
-/dev/iio:device*                                0660   system     input
-
-# Native sensors
-/sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
-/sys/devices/i2c-12/12-*  enable  0664 system system
-/sys/devices/i2c-12/12-*  poll_delay 0664 system system
-
 # IR Remote
 /dev/ttyHSL2                                    0660  system   system
 /sys/devices/platform/ir_remote_control  enable 0220  system   system

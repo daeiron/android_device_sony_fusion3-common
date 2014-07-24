@@ -48,8 +48,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS / Location
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf \
-    $(COMMON_PATH)/rootdir/system/etc/sap.conf:system/etc/sap.conf
+    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf
 
 # WPA supplicant config
 PRODUCT_COPY_FILES += \
@@ -204,10 +203,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
-
-# Touchscreen
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.input.noresample=1
 
 # Touchscreen
 PRODUCT_PROPERTY_OVERRIDES += \
