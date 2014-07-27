@@ -600,12 +600,6 @@ service qseecomd /system/bin/qseecomd
     user system
     group system
 
-#start GNSS/Sensor interface daemon
-service gsiff_daemon /system/bin/gsiff_daemon
-    class late_start
-    user system
-    group gps qcom_oncrpc net_raw
-
 # Start suntrold
 service suntrold /system/bin/suntrold
     user system
